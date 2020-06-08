@@ -1,0 +1,647 @@
+
+
+  <div class="navbar-area navbar-style-two">
+    <div class="luvion-responsive-nav">
+        <div class="container">
+            <div class="luvion-responsive-menu">
+                <div class="logo">
+                    <a href="#">
+                        <img src="assets/img/logo.png" alt="logo">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="luvion-nav">
+        <div class="container">
+            <nav class="navbar navbar-expand-md navbar-light">
+                <a class="navbar-brand" href="#">
+                    <img src="assets/img/logo.png" alt="logo">
+                </a>
+
+        
+                <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent" style="color:#00a5e2 !important;">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a href="#" class="nav-link active"style="color:#00a5e2 !important;">{{ 'portal.home' | translate }}</a></li>
+
+                        <li class="nav-item"><a  routerLink="/aboutus" class="nav-link"style="color:#00a5e2 !important;">{{ 'portal.aboutus' | translate }}</a></li>
+
+                        <li class="nav-item"><a routerLink="/gatewayservices" class="nav-link"style="color:#00a5e2 !important;">{{ 'portal.gateway' | translate }}</a></li>
+
+                        <li class="nav-item"><a routerLink="/processing" class="nav-link"style="color:#00a5e2 !important;">{{ 'portal.processing' | translate }}</a> </li>
+
+                        <li class="nav-item"><a routerLink="/contactus"  class="nav-link"style="color:#00a5e2 !important;">{{ 'portal.contact' | translate }}</a></li>
+					  <li class="nav-item"><a href="#" class="nav-link active" style="color:#00a5e2 !important;">{{ 'portal.language' | translate }} <i class="fas fa-chevron-down"></i></a>
+                                    <ul class="dropdown-menu">
+									
+                                        <li class="nav-item"><a [routerLink]="" (click)="useLanguage('en')" class="nav-link" style="color:#00a5e2 !important;">English</a></li>
+
+                                        <li class="nav-item"><a [routerLink]="" (click)="useLanguage('de')" class="nav-link"style="color:#00a5e2 !important;">Spanish</a></li>
+
+                                    </ul>
+                                </li>
+			
+						
+                    </ul>
+
+                    <div class="others-options">
+                        <a href="https://appopay.com/admin/#/login" class="login-btn"style="color:#00a5e2 !important;"><i class="flaticon-user" style="color:#00a5e2 !important;"></i> {{ 'portal.login' | translate }}</a>
+						 <a href="https://appopay.com/admin/#/register"  class="login-btn"style="color:#00a5e2 !important;margin-left: 26px;"><i class="flaticon-user" style="color:#00a5e2 !important;"></i> {{ 'portal.signup' | translate }}</a>
+                    
+					</div>
+                </div>
+            </nav>
+        </div>
+    </div>
+</div>
+<!-- End Navbar Area -->
+<!-- End Navbar Area -->
+        <!-- Start Page Title Area -->
+        <div class="page-title-area item-bg2 jarallax" data-jarallax='{"speed": 0.3}'>
+            <div class="container">
+                <div class="page-title-content">
+                    <h2>Merchant Application Form </h2>
+                    <p>--Merchant Application Form --</p>
+                </div>
+            </div>
+        </div>
+        <!-- End Page Title Area -->
+
+        <!-- Start Contact Area -->
+        <section class="contact-area ptb-70">
+            <div class="container">
+                <div class="section-title">
+                    <h3>BUSINESS INFORMATION </h3>
+                    <div class="bar"></div>
+                  
+                </div>
+
+                <div class="row">
+             
+
+                    <div class="col-lg-12 col-md-12">
+                        <div class="contact-form">
+                         
+							  <form #userlogin = "ngForm" (ngSubmit) = "onClickSubmit(userlogin.value)" >
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6">
+                                        <div class="form-group">
+                                            <input type="text" name="legalame" id="legalame" class="form-control" required data-error="Please enter Legal Name" placeholder="Legal Name">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-6 col-md-6">
+                                        <div class="form-group">
+                                            <input type="email" name="businessname" id="businessname" class="form-control" required data-error="Enter Business Name (DBA)" placeholder="Business Name (DBA)">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-6 col-md-6">
+                                        <div class="form-group">
+                                            <input type="text" name="merchanttax_id" id="merchanttax_id" required data-error="Please enter Merchant Tax ID " class="form-control" placeholder="Merchant Tax ID ">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-6 col-md-6">
+                                        <div class="form-group">
+                                            <input type="text" name="legal_entity" id="legal_entity" class="form-control" required data-error="Please enter Type of Legal Entity" placeholder="Type of Legal Entity">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+									   <div class="col-lg-6 col-md-6">
+                                        <div class="form-group">
+                                            <input type="text" name="websites_url" id="websites_url" class="form-control" required data-error="Please enter Websites (URLs) " placeholder="Websites (URLs) ">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+									   <div class="col-lg-6 col-md-6">
+                                        <div class="form-group">
+                                            <input type="text" name="testuser" id="testuser" class="form-control" required data-error="Please enter Test User/Password  (If applicable) " placeholder="Test User/Password  (If applicable) ">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-12 col-md-12">
+                                        <div class="form-group">
+                                            <textarea name="address" class="form-control" id="address" cols="30" rows="6" required data-error="Write your Address" placeholder="Address"></textarea>
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+
+     <div class="col-lg-12 col-md-12">
+                                      <h4>Principal (person who signs the contract)  </h4>
+                                    </div>
+                  
+                   
+            
+
+ 
+									
+									
+									
+									
+									   <div class="col-lg-4 col-md-6 px-2">
+                                        <div class="form-group">
+                                            <input type="text" name="principa_name" id="principa_name" class="form-control" required data-error="principa_name" placeholder="principal name :">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+																	   <div class="col-lg-4 col-md-6 px-2">
+                                        <div class="form-group">
+                                            <input type="text" name="principa_phone" id="principa_phone" class="form-control" required data-error="principa_phone" placeholder="principal phone :">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+									   <div class="col-lg-4 col-md-6 px-2">
+                                        <div class="form-group">
+                                            <input type="text" name="principa_email" id="principa_email" class="form-control" required data-error="principa_email" placeholder="principa email:">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+									
+									
+							  <div class="col-lg-12 col-md-12">
+                                      <h4>Operational Contact (regular contact person from the company)   </h4>
+                                    </div>
+                  
+                   
+            
+
+ 
+									
+									
+									
+									
+									   <div class="col-lg-4 col-md-4 px-2">
+                                        <div class="form-group">
+                                            <input type="text" name="operational_name" id="operational_name" class="form-control" required data-error="operational_name" placeholder="operational name :">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+																	   <div class="col-lg-4 col-md-4 px-2">
+                                        <div class="form-group">
+                                            <input type="text" name="operational_phone" id="operational_phone" class="form-control" required data-error="operational_phone" placeholder="operational phone :">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+									   <div class="col-lg-4 col-md-4 px-2">
+                                        <div class="form-group">
+                                            <input type="text" name="operational_email" id="operational_email" class="form-control" required data-error="operational_email" placeholder="operational email:">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+									
+									
+									
+																  <div class="col-lg-12 col-md-12">
+                                      <h4>Technical Contact    </h4>
+                                    </div>
+                  
+                   
+            
+
+ 
+									
+									
+									
+									
+									   <div class="col-lg-4 col-md-4 px-2">
+                                        <div class="form-group">
+                                            <input type="text" name="technical_name" id="technical_name" class="form-control" required data-error="technical_name" placeholder="technical name :">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+																	   <div class="col-lg-4 col-md-4 px-2">
+                                        <div class="form-group">
+										
+                                            <input type="text" name="technical_phone" id="technical_phone" class="form-control" required data-error="technical_phone" placeholder="technical phone :">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+									   <div class="col-lg-4 col-md-4 px-2">
+                                        <div class="form-group">
+                                            <input type="text" name="technical_email" id="technical_email" class="form-control" required data-error="technical_email" placeholder="technical email:">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+									
+									
+									 <div class="col-lg-12 col-md-12 py-4">
+                                      <h3>BUSINESS PROFILE   </h3>
+                                    </div>
+									
+										 <div class="col-lg-12 col-md-12 ">
+                                      <h6>1. Describe the goods/services to be paid using our ecommerce solutions:  </h6>
+                                    </div>
+										 <div class="col-lg-12 col-md-12">
+										
+	<table >
+		<tr>
+			<th class="col-lg-3 col-md-3 py-2 " >Monthly Sales Volume (amount) </th>
+			<th class="col-lg-3 col-md-3 py-2" >Monthly Transactions (count) </th>
+			<th class="col-lg-3 col-md-3 py-2" >Maximum Amount per Transaction </th>
+			<th></th>
+		</tr>
+		<tr *ngFor="let item of row; let i = index">
+			<td class="col-lg-4 col-md-4 px-2"> <div class="form-group">
+                                            <input type="text" name="monthly_volume" id="monthly_volume" class="form-control" required data-error="Monthly Sales Volume (amount)" placeholder="Monthly Sales Volume (amount) :">
+                                          
+                                        </div></td>
+			<td class="col-lg-4 col-md-4 px-2"> <div class="form-group">
+                                            <input type="text" name="monthly_tran" id="monthly_tran" class="form-control" required data-error="Monthly Transactions (count)" placeholder="Monthly Transactions (count) :">
+                                            <div class="help-block with-errors"></div>
+                                        </div></td>
+		<td class="col-lg-4 col-md-4 px-2"> <div class="form-group">
+                                            <input type="text" name="per_tran" id="per_tran" class="form-control" required data-error="Maximum Amount per Transaction" placeholder="Maximum Amount per Transaction :">
+                                            <div class="help-block with-errors"></div>
+                                        </div></td>
+								<td>		<button style="margin-top: 0!important;"class="btn btn-primary"(click)="addTable()">+</button></td>
+			<td> <button style="margin-top: 0!important;" class="btn btn-primary"(click) = "deleteRow(i)"><i class="fa fa-trash"></i></button></td>
+		</tr>
+	</table>
+	</div>
+        <!-- End Contact Area -->
+		
+     <div class="col-lg-12 col-md-12 py-4">
+                                      <h6>Summarize your business model (please attach a Business Plan and/or Financial Projections):   </h6>
+                                    </div>
+		
+                                    <div class="col-lg-12 col-md-12">
+                                        <div class="form-group">
+                                            <textarea name="business_address" class="form-control" id="business_address" cols="30" rows="6" required data-error="Write your Address" placeholder="Summarize your business model"></textarea>
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+									
+									        
+																	   <div class=" row col-lg-12 col-md-12 py-4">
+																	 
+                                          	   <div class="col-lg-4 col-md-4 px-2">
+                    <h6>When is the customer card charged? </h6>
+                                    </div>
+                                   	   <div class="col-lg-4 col-md-4 px-2">
+                                                                         <div class="form-group">
+										    <label class="checkbox-inline" for="checkboxes-0">
+      <input type="checkbox" name="checkboxes" id="checkboxes-0" value="1">
+      When placing the order     
+    </label>   </div>
+                                    </div>
+										   <div class="col-lg-4 col-md-4 px-2">
+                                                                         <div class="form-group">
+										    <label class="checkbox-inline" for="checkboxes-0">
+      <input type="checkbox" name="checkboxes" id="checkboxes-0" value="1">
+      When placing the order     
+    </label>   </div>
+                                    </div>
+                                
+                                    </div>
+									
+																   <div class=" row col-lg-12 col-md-12 py-4">
+																	 
+                                          	   <div class="col-lg-3 col-md-3 px-2">
+                    <h6>Do you offer a free trial?  </h6>
+                                    </div>
+                                   	   <div class="col-lg-1 col-md-1 px-2">
+                                                                         <div class="form-group">
+										    <label class="checkbox-inline" for="checkboxes-0">
+      <input type="checkbox" name="checkboxes" id="checkboxes-0" value="1">
+     Yes  
+    </label>   </div>
+                                    </div>
+										   <div class="col-lg-1 col-md-1 px-2">
+                                                                         <div class="form-group">
+										    <label class="checkbox-inline" for="checkboxes-0">
+      <input type="checkbox" name="checkboxes" id="checkboxes-0" value="1">
+    No    
+    </label>   </div>
+                                    </div>
+                                								 
+                                          	   <div class="col-lg-3 col-md-3 px-2">
+                    <h6>Do you have recurring billing?  </h6>
+                                    </div>
+                                   	   <div class="col-lg-1 col-md-1">
+                                                                         <div class="form-group">
+										    <label class="checkbox-inline" for="checkboxes-0">
+      <input type="checkbox" name="checkboxes" id="checkboxes-0" value="1">
+     Yes  
+    </label>   </div>
+                                    </div>
+										   <div class="col-lg-1 col-md-1">
+                                                                         <div class="form-group">
+										    <label class="checkbox-inline" for="checkboxes-0">
+      <input type="checkbox" name="checkboxes" id="checkboxes-0" value="1">
+    No    
+    </label>   </div>
+                                    </div>
+                                    </div>
+									
+									
+									<div class="col-lg-12 col-md-12 py-4">
+                                      <h6>If applicable, please provide information about your current logistics provider (shipping, tracking, courier delivery):    </h6>
+                                    </div>
+		
+                                    <div class="col-lg-12 col-md-12">
+                                        <div class="form-group">
+                                            <textarea name="Address" class="form-control" id="message" cols="30" rows="6" required data-error="Write your Address" placeholder="provide information about your current logistics provider "></textarea>
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+									
+									
+									 <div class=" row col-lg-12 col-md-12 py-4">
+																	 
+                                          	   <div class="col-lg-4 col-md-4 px-2">
+                    <h6>Is tracking information available:  </h6>
+                                    </div>
+                                   	   <div class="col-lg-1 col-md-1 px-2">
+                                                                         <div class="form-group">
+										    <label class="checkbox-inline" for="checkboxes-0">
+      <input type="checkbox" name="checkboxes" id="checkboxes-0" value="1">
+     Yes  
+    </label>   </div>
+                                    </div>
+										   <div class="col-lg-1 col-md-1 px-2">
+                                                                         <div class="form-group">
+										    <label class="checkbox-inline" for="checkboxes-0">
+      <input type="checkbox" name="checkboxes" id="checkboxes-0" value="1">
+    No    
+    </label>   </div>
+                                    </div>
+                                								 
+                                          	   <div class="col-lg-4 col-md-4 px-2">
+                    <h6>Is a proof of delivery requested:   </h6>
+                                    </div>
+                                   	   <div class="col-lg-1 col-md-1">
+                                                                         <div class="form-group">
+										    <label class="checkbox-inline" for="checkboxes-0">
+      <input type="checkbox" name="checkboxes" id="checkboxes-0" value="1">
+     Yes  
+    </label>   </div>
+                                    </div>
+										   <div class="col-lg-1 col-md-1">
+                                                                         <div class="form-group">
+										    <label class="checkbox-inline" for="checkboxes-0">
+      <input type="checkbox" name="checkboxes" id="checkboxes-0" value="1">
+    No    
+    </label>   </div>
+                                    </div>
+                                    </div>
+									
+                          
+						  
+						  		<div class="col-lg-12 col-md-12 py-4">
+                                      <h6>Which country/regions will your goods/services be delivered to?     </h6>
+                                    </div>
+		
+                                    <div class="col-lg-12 col-md-12">
+                                        <div class="form-group">
+                                            <textarea name="Address" class="form-control" id="message" cols="30" rows="6" required data-error="Write your Address" placeholder="info.. "></textarea>
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+									
+									
+									  		<div class="col-lg-12 col-md-12 py-4">
+                                      <h6>Where is your website hosted? (E.g. Shopify, Wix, WordPress, etc.)    </h6>
+                                    </div>
+		
+                                    <div class="col-lg-12 col-md-12">
+                                        <div class="form-group">
+                                            <textarea name="Address" class="form-control" id="message" cols="30" rows="6" required data-error="Write your Address" placeholder="info.. "></textarea>
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+							
+
+		
+									 <div class=" row col-lg-12 col-md-12 py-4">
+																	 
+                                          	   <div class="col-lg-4 col-md-4 py-4 px-2">
+                    <h6>Do you have a refund/cancellation policy?   </h6>
+                                    </div>
+                                   	   <div class="col-lg-1 col-md-1 px-2  py-4">
+                                                                         <div class="form-group">
+										    <label class="checkbox-inline" for="checkboxes-0">
+      <input type="checkbox" name="checkboxes" id="checkboxes-0" value="1">
+     Yes  
+    </label>   </div>
+                                    </div>
+										   <div class="col-lg-1 col-md-1 px-2  py-4">
+                                                                         <div class="form-group">
+										    <label class="checkbox-inline" for="checkboxes-0">
+      <input type="checkbox" name="checkboxes" id="checkboxes-0" value="1">
+    No    
+    </label>   </div>
+                                    </div>
+                                	   <div class="col-lg-6 col-md-6 px-2">
+                                        <div class="form-group">
+                                            <textarea name="Address" class="form-control" id="message" cols="30" rows="6" required data-error="Write your Address" placeholder="info.. "></textarea>
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>							 
+                                   
+                                    </div>	
+
+
+							   <div class=" row col-lg-12 col-md-12 py-4">
+																	 
+                                          	   <div class="col-lg-6 col-md-6 px-2">
+                    <h6>Do you have the goods in stock at the time of the order?  </h6>
+                                    </div>
+                                   	   <div class="col-lg-2 col-md-2 px-2">
+                                                                         <div class="form-group">
+										    <label class="checkbox-inline" for="checkboxes-0">
+      <input type="checkbox" name="checkboxes" id="checkboxes-0" value="1">
+      Yes  
+    </label>   </div>
+                                    </div>
+										   <div class="col-lg-2 col-md-2 px-2">
+                                                                         <div class="form-group">
+										    <label class="checkbox-inline" for="checkboxes-0">
+      <input type="checkbox" name="checkboxes" id="checkboxes-0" value="1">
+     No    
+    </label>   </div>
+                                    </div>
+                                	   <div class="col-lg-2 col-md-2 px-2">
+                                                                         <div class="form-group">
+										    <label class="checkbox-inline" for="checkboxes-0">
+      <input type="checkbox" name="checkboxes" id="checkboxes-0" value="1">
+     Not Applicable
+    </label>   </div>
+                                    </div>
+                                    </div>
+
+
+
+
+							   <div class=" row col-lg-12 col-md-12 py-4">
+																	 
+                                          	   <div class="col-lg-6 col-md-6 px-2">
+                    <h6>Who enters the credit card information in the payments portal?   </h6>
+                                    </div>
+                                   	   <div class="col-lg-3 col-md-3 px-2">
+                                                                         <div class="form-group">
+										    <label class="checkbox-inline" for="checkboxes-0">
+      <input type="checkbox" name="checkboxes" id="checkboxes-0" value="1">
+The cardholder/customer
+    </label>   </div>
+                                    </div>
+										   <div class="col-lg-2 col-md-2 px-2">
+                                                                         <div class="form-group">
+										    <label class="checkbox-inline" for="checkboxes-0">
+      <input type="checkbox" name="checkboxes" id="checkboxes-0" value="1">
+   The merchant
+    </label>   </div>
+                                    </div>
+                                	   <div class="col-lg-1 col-md-1 px-2">
+                                                                         <div class="form-group">
+										    <label class="checkbox-inline" for="checkboxes-0">
+      <input type="checkbox" name="checkboxes" id="checkboxes-0" value="1">
+     Other:  
+    </label>   </div>
+                                    </div>
+                                    </div>	
+
+
+   <div class="col-lg-12 col-md-12 py-4">
+                                      <h6>13.	Please share any additional information regarding your business model:  </h6>
+                                    </div>
+		
+                                    <div class="col-lg-12 col-md-12">
+                                        <div class="form-group">
+                                            <textarea name="Address" class="form-control" id="message" cols="30" rows="6" required data-error="Write your Address" placeholder="info..."></textarea>
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>									
+						  <div class="col-lg-12 col-md-12">
+                                        <button type="submit" class="btn btn-primary">Submit</button>
+                                        <div id="msgSubmit" class="h3 text-center hidden"></div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="bg-map"><img src="assets/img/bg-map.png" alt="image"></div>
+        </section>
+		
+		
+
+
+<section class="account-create-area">
+    <div class="container">
+        <div class="account-create-content">
+            <h2>{{ 'portal.home37' | translate }}</h2>
+            <p>{{ 'portal.home38' | translate }}</p>
+            <a href="https://appopay.com/admin/#/register" class="btn btn-primary">{{ 'portal.home39' | translate }}</a>
+        </div>
+    </div>
+</section>
+
+
+
+
+<!-- End Account Create Area -->
+
+
+
+<!-- Start Footer Area -->
+<footer class="footer-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-sm-6 col-md-6">
+                <div class="single-footer-widget">
+                    <div class="logo">
+                        <a href="#"><img src="assets/img/logo.png" alt="logo"></a>
+                       <!-- <p>Quis ipsum suspendisse ultrices gravida commodo. Risus commodo veliliee vel viverra maecenas accumsan lacus vel facilisis.</p>-->
+                    </div>
+                    
+                    <ul class="social-links" style="text-align:center;">
+                        <li><a href="https://www.facebook.com/appopayapp/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="https://www.instagram.com/appopayapp" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                    </ul>
+                </div>
+				<div class="single-footer-widget">
+                    <div class="logo roww">
+					<span><h6  style="margin-left:70px;">{{ 'portal.home57' | translate }}</h6> </span>
+                
+				     <div class="columnn">
+      <a href="https://www.serverscan.com/seal/window.php?domain=www.serverscan.com">
+				   <img   style="max-width:150%;margin-left:20px;" src="assets/img/security.png" alt="logo">
+				   </a>
+  </div>
+  <div class="columnn">
+     <a href="https://www.serverscan.com/seal/window.php?domain=www.serverscan.com">
+				   <img   style="max-width:150%;margin-left:60px;" src="assets/img/pci.png" alt="logo">
+				   </a>
+  </div>
+				   
+                       <!-- <p>Quis ipsum suspendisse ultrices gravida commodo. Risus commodo veliliee vel viverra maecenas accumsan lacus vel facilisis.</p>-->
+                    </div>
+                    
+              
+                </div>
+
+            </div>
+			
+
+            <div class="col-lg-3 col-sm-6 col-md-6">
+                <div class="single-footer-widget pl-5">
+                    <h3>{{ 'portal.home40' | translate }}</h3>
+                    
+                    <ul class="list">
+                        <li><a routerLink="/aboutus">{{ 'portal.home41' | translate }}</a></li>
+                        <li><a href="#">{{ 'portal.home42' | translate }}</a></li>
+                        <li><a href="#">{{ 'portal.home43' | translate }}</a></li>
+                        <li><a href="#">{{ 'portal.home44' | translate }}</a></li>
+                        <li><a href="#">{{ 'portal.home45' | translate }}</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-sm-6 col-md-6">
+                <div class="single-footer-widget">
+                    <h3>{{ 'portal.home46' | translate }}</h3>
+                    
+                    <ul class="list">
+                        <li><a href="#">{{ 'portal.home47' | translate }}</a></li>
+                        <li><a routerLink="/privacynotice">{{ 'portal.home48' | translate }}</a></li>
+                        <li><a routerLink="/termsofuse">{{ 'portal.home49' | translate }}</a></li>
+                        <li><a href="#">{{ 'portal.home50' | translate }}</a></li>
+                        <li><a href="#">{{ 'portal.home51' | translate }}</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-sm-6 col-md-6">
+                <div class="single-footer-widget">
+                    <h3>{{ 'portal.home52' | translate }}</h3>
+                    
+                      <ul class="footer-contact-info">
+                        <li>{{ 'portal.home53' | translate }}</li>
+                        <li><a href="#"> {{ 'portal.home54' | translate }}</a></li>
+                        <li><a href="#">{{ 'portal.home55' | translate }}</a></li>
+                      
+                    </ul>
+                </div>
+            </div>
+        </div>
+ 
+        <div class="copyright-area">
+  
+        <a href="#">{{ 'portal.home56' | translate }}</a>
+        </div>
+    </div>
+    
+    <div class="map-image"><img src="assets/img/map.png" alt="map"></div>
+</footer>
+<!-- End Footer Area -->

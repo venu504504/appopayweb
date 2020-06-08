@@ -1,0 +1,173 @@
+a{ color:#00a5e2 }
+a:hover{ color:#06aeec } 
+.custom-control-label{ color: #00a5e2 }
+.login-section{ width: 100%; background: url('assets/img/login-bg.jpg') no-repeat center; background-size: cover; position: relative;
+   // background: rgb(245,54,92);
+   // background: linear-gradient(90deg, rgba(245,54,92,1) 0%, rgba(245,54,92,1) 35%, rgba(245,96,54,1) 100%);
+   // background: rgb(255,128,0);
+   // background: linear-gradient(90deg, rgba(255,128,0,1) 0%, rgba(254,132,10,0.9556197478991597) 35%, rgba(255,145,35,1) 100%);
+} 
+// .login-section:after{width:130%; height:calc(100vh - 20vh); content:''; position: absolute; bottom:-30vh; left:-15%; z-index:3; background-color:#015c7d;
+//     -ms-transform: rotate(-4deg);
+//     -webkit-transform: rotate(-4deg); 
+//     transform: rotate(-4deg) } 
+.login-section:after{width:100%; height:100vh; content:''; position: fixed; bottom:0; left:0; z-index:3; background-color:rgba(1, 92, 125,0.5) } 
+.logo img{ max-width: 220px }
+.login-wrapper{ width: 100%; height: 100vh; display: table; }
+.login-box{ width: 100%; height: 100%; position: relative; z-index: 9; display: table-cell; vertical-align: middle  }
+.login-box-inner{ width: 390px; padding: 30px; margin: 15px auto; background:#fff; 
+   border-radius: 3px;
+   -webkit-border-radius: 3px;
+   -moz-border-radius: 3px;
+   box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+   -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+   -moz-box-shadow: 0 0 6px rgba(0, 0, 0, 0.1); }
+.login-box-inner h1{ font-size:16px; line-height: 18px; padding: 0; margin: 0 0 25px; }    
+#logo{ width: 180px; display: block;  margin: 0 auto 10px; }
+.btn-primary{ border-radius: 3px; -webkit-border-radius: 3px; -moz-border-radius: 3px; font-weight: 400; letter-spacing: 0.8px; 
+   background: rgb(0,165,226);
+   background: linear-gradient(90deg, rgba(0,165,226,1) 0%, rgba(3,172,235,1) 35%, rgba(6,174,236,1) 100%); }
+.form-control{ border-radius: 3px; -webkit-border-radius: 3px; -moz-border-radius: 3px }    
+
+
+
+
+
+
+.stepper .nav-tabs {
+  position: relative;
+  border-bottom: inherit;
+}
+.stepper .nav-tabs > li {
+  width: 33.33%;
+  position: relative;
+  float: left;
+}
+.stepper .nav-tabs > li > a {
+    position: relative;
+    display: block;
+    padding: 0;
+}
+.stepper .nav-tabs > li a .title{ width: 50px; text-align: center; position: absolute; top: 27px; left:-50% }
+.stepper .nav-tabs > li a.active .title{ color: #34bc9b; }
+.stepper .nav-tabs > li:after {
+  content: "";
+  position: absolute;
+  background: #f1f1f1;
+  display: block;
+  width: 100%;
+  height: 5px;
+  top: 20px;
+  left: 50%;
+  z-index: 1;
+}
+.stepper .nav-tabs > li.completed::after {
+  background: #34bc9b;
+}
+.stepper .nav-tabs > li:last-child::after {
+  background: transparent;
+}
+.stepper .nav-tabs > li.active:last-child .round-tab {
+  background: #34bc9b;
+}
+.stepper .nav-tabs > li.active:last-child .round-tab::after {
+  content: "✔";
+  color: #fff;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 0;
+  display: block;
+}
+.stepper .nav-tabs [data-toggle="tab"] {
+  width: 25px;
+  height: 25px;
+  margin: 10px auto;
+  border-radius: 100%;
+  border: none;
+  padding: 0;
+  color: #f1f1f1;
+}
+.stepper .nav-tabs [data-toggle="tab"]:hover {
+  background: transparent;
+  border: none;
+}
+.stepper .nav-tabs > .active > [data-toggle="tab"],
+.stepper .nav-tabs > .active > [data-toggle="tab"]:hover,
+.stepper .nav-tabs > .active > [data-toggle="tab"]:focus {
+  color: #34bc9b;
+  cursor: default;
+  border: none;
+}
+.stepper .nav-tabs > li > a.active > span {
+  color: #34bc9b;
+  cursor: default;
+  border-color: #34bc9b;
+}
+.stepper .nav-tabs > li.completed:after{ background:#34bc9b; }
+
+.stepper .tab-pane {
+  position: relative;
+  padding-top: 20px;
+}
+.stepper .round-tab {
+  width: 25px;
+  height: 25px;
+  line-height: 22px;
+  display: inline-block;
+  border-radius: 25px;
+  background: #fff;
+  border: 2px solid #34bc9b;
+  color: #34bc9b;
+  z-index: 2;
+  position: absolute;
+  left: 0;
+  text-align: center;
+  font-size: 14px;
+}
+.stepper .completed .round-tab {
+  background: #34bc9b;
+}
+.stepper .completed .round-tab::after {
+  content: "✔";
+  color: #fff;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 0;
+  display: block;
+}
+.stepper .active .round-tab {
+  background: #fff;
+  border: 2px solid #34bc9b;
+}
+.stepper .active .round-tab:hover {
+  background: #fff;
+  border: 2px solid #34bc9b;
+}
+.stepper .active .round-tab::after {
+  display: none;
+}
+.stepper .disabled .round-tab {
+  background: #fff;
+  color: #f1f1f1;
+  border-color: #f1f1f1;
+}
+.stepper .disabled .round-tab:hover {
+  color: #4dd3b6;
+  border: 2px solid #a6dfd3;
+}
+.stepper .disabled .round-tab::after {
+  display: none;
+}
+
+.card-option > li{ width:calc(50% - 10px); margin:0 }
+.card-option > li:first-child{ margin-right: 5px; }
+.card-option > li:Last-child{ margin-left: 5px; }
+.card-option .btn{ color: #fff; font-size: 14px; }
+.card-option .btn.active{ background: rgb(1, 141, 192);
+    background: linear-gradient(90deg, rgb(1, 141, 192) 0%, rgb(0, 143, 196) 35%, rgb(0, 145, 197) 100%); }
+
+.logo-cooptavanza{ max-width: 220px; display: block; margin: 0 auto 10px; }    

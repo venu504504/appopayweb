@@ -1,0 +1,276 @@
+
+
+ 
+ <div class="navbar-area navbar-style-two">
+    <div class="luvion-responsive-nav">
+        <div class="container">
+            <div class="luvion-responsive-menu">
+                <div class="logo">
+                    <a href="#">
+                        <img src="assets/img/logo.png" alt="logo">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="luvion-nav">
+        <div class="container">
+            <nav class="navbar navbar-expand-md navbar-light">
+                <a class="navbar-brand" href="#">
+                    <img src="assets/img/logo.png" alt="logo">
+                </a>
+
+        
+                <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent" style="color:#00a5e2 !important;">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a href="#" class="nav-link active"style="color:#00a5e2 !important;">{{ 'portal.home' | translate }}</a></li>
+
+                        <li class="nav-item"><a  routerLink="/aboutus" class="nav-link"style="color:#00a5e2 !important;">{{ 'portal.aboutus' | translate }}</a></li>
+
+                        <li class="nav-item"><a routerLink="/gatewayservices" class="nav-link"style="color:#00a5e2 !important;">{{ 'portal.gateway' | translate }}</a></li>
+
+                        <li class="nav-item"><a routerLink="/processing" class="nav-link"style="color:#00a5e2 !important;">{{ 'portal.processing' | translate }}</a> </li>
+
+                        <li class="nav-item"><a routerLink="/contactus"  class="nav-link"style="color:#00a5e2 !important;">{{ 'portal.contact' | translate }}</a></li>
+					  <li class="nav-item"><a href="#" class="nav-link active" style="color:#00a5e2 !important;">{{ 'portal.language' | translate }} <i class="fas fa-chevron-down"></i></a>
+                                    <ul class="dropdown-menu">
+									
+                                        <li class="nav-item"><a [routerLink]="" (click)="useLanguage('en')" class="nav-link" style="color:#00a5e2 !important;">English</a></li>
+
+                                        <li class="nav-item"><a [routerLink]="" (click)="useLanguage('de')" class="nav-link"style="color:#00a5e2 !important;">Spanish</a></li>
+
+                                    </ul>
+                                </li>
+			
+						
+                    </ul>
+
+                    <div class="others-options">
+                        <a href="https://appopay.com/admin/#/login" class="login-btn"style="color:#00a5e2 !important;"><i class="flaticon-user" style="color:#00a5e2 !important;"></i> {{ 'portal.login' | translate }}</a>
+						 <a href="https://appopay.com/admin/#/register"  class="login-btn"style="color:#00a5e2 !important;margin-left: 26px;"><i class="flaticon-user" style="color:#00a5e2 !important;"></i> {{ 'portal.signup' | translate }}</a>
+                    
+					</div>
+                </div>
+            </nav>
+        </div>
+    </div>
+</div>
+<!-- End Navbar Area -->
+<!-- End Navbar Area -->
+        <!-- Start Page Title Area -->
+        <div class="page-title-area item-bg2 jarallax" data-jarallax='{"speed": 0.3}'>
+            <div class="container">
+                <div class="page-title-content">
+                    <h2>{{ 'portal.contact1' | translate }}</h2>
+                    <p>--{{ 'portal.contact2' | translate }}--</p>
+                </div>
+            </div>
+        </div>
+        <!-- End Page Title Area -->
+
+        <!-- Start Contact Area -->
+        <section class="contact-area ptb-70">
+            <div class="container">
+                <div class="section-title">
+                    <h2>{{ 'portal.contact3' | translate }}</h2>
+                    <div class="bar"></div>
+                  
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-5 col-md-12">
+                        <div class="contact-info">
+                            <ul>
+                               
+
+
+							   <li>
+                                    <div class="icon">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                    </div>
+                                    <span>{{ 'portal.contact4' | translate }}</span>
+                                
+{{ 'portal.contact5' | translate }}
+                                </li>
+
+                                <li>
+                                    <div class="icon">
+                                        <i class="fas fa-envelope"></i>
+                                    </div>
+                                    <span>{{ 'portal.contact6' | translate }}</span>
+                                    <a href="#">support@appopay.com</a>
+                                   
+                                </li>
+
+                                <li>
+                                    <div class="icon">
+                                        <i class="fas fa-phone-volume"></i>
+                                    </div>
+                                    <span>{{ 'portal.contact7' | translate }}</span>
+                                    <a href="#"> +507 6351 6303 </a>
+                                  
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-7 col-md-12">
+                        <div class="contact-form">
+                            <form #userlogin = "ngForm" (ngSubmit) = "onClickSubmit(userlogin.value)" >
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6">
+                                        <div class="form-group">
+                                           
+                                            <input type="text" name="name" id="name" class="form-control" required data-error="Please enter your name" placeholder="{{ 'portal.contact8' | translate }}" ngModel>
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-6 col-md-6">
+                                        <div class="form-group">
+                                            <input type="email" name="email" id="email" class="form-control" required data-error="Please enter your email" placeholder="{{ 'portal.contact6' | translate }}" ngModel >
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-6 col-md-6">
+                                        <div class="form-group">
+                                            <input type="text" name="phone_number" id="phone_number" required data-error="Please enter your number" class="form-control" placeholder="{{ 'portal.contact7' | translate }}" ngModel>
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-6 col-md-6">
+                                        <div class="form-group">
+                                            <input type="text" name="msg_subject" id="msg_subject" class="form-control" required data-error="Please enter your subject" placeholder="{{ 'portal.contact9' | translate }}" ngModel>
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-12 col-md-12">
+                                        <div class="form-group">
+                                            <textarea name="message" class="form-control" id="message" cols="30" rows="6" required data-error="Write your message" placeholder="{{ 'portal.contact10' | translate }}" ngModel></textarea>
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-12 col-md-12">
+                                        <button  type="submit" class="btn btn-primary">Submit</button>
+                                        <div id="msgSubmit" class="h3 text-center hidden"></div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="bg-map"><img src="assets/img/bg-map.png" alt="image"></div>
+        </section>
+        <!-- End Contact Area -->
+
+<section class="account-create-area">
+    <div class="container">
+        <div class="account-create-content">
+            <h2>{{ 'portal.home37' | translate }}</h2>
+            <p>{{ 'portal.home38' | translate }}</p>
+            <a href="https://appopay.com/admin/#/register" class="btn btn-primary">{{ 'portal.home39' | translate }}</a>
+        </div>
+    </div>
+</section>
+
+
+<footer class="footer-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-sm-6 col-md-6">
+                <div class="single-footer-widget">
+                    <div class="logo">
+                        <a href="#"><img src="assets/img/logo.png" alt="logo"></a>
+                       <!-- <p>Quis ipsum suspendisse ultrices gravida commodo. Risus commodo veliliee vel viverra maecenas accumsan lacus vel facilisis.</p>-->
+                    </div>
+                    
+                    <ul class="social-links" style="text-align:center;">
+                        <li><a href="https://www.facebook.com/appopayapp/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="https://www.instagram.com/appopayapp" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                    </ul>
+                </div>
+				<div class="single-footer-widget">
+                    <div class="logo roww">
+					<span><h6  style="margin-left:70px;">{{ 'portal.home57' | translate }}</h6> </span>
+                
+				     <div class="columnn">
+      <a href="https://www.serverscan.com/seal/window.php?domain=www.serverscan.com">
+				   <img   style="max-width:150%;margin-left:20px;" src="assets/img/security.png" alt="logo">
+				   </a>
+  </div>
+  <div class="columnn">
+     <a href="https://www.serverscan.com/seal/window.php?domain=www.serverscan.com">
+				   <img   style="max-width:150%;margin-left:60px;" src="assets/img/pci.png" alt="logo">
+				   </a>
+  </div>
+				   
+                       <!-- <p>Quis ipsum suspendisse ultrices gravida commodo. Risus commodo veliliee vel viverra maecenas accumsan lacus vel facilisis.</p>-->
+                    </div>
+                    
+              
+                </div>
+
+            </div>
+			
+
+            <div class="col-lg-3 col-sm-6 col-md-6">
+                <div class="single-footer-widget pl-5">
+                    <h3>{{ 'portal.home40' | translate }}</h3>
+                    
+                    <ul class="list">
+                        <li><a routerLink="/aboutus">{{ 'portal.home41' | translate }}</a></li>
+                        <li><a href="#">{{ 'portal.home42' | translate }}</a></li>
+                        <li><a href="#">{{ 'portal.home43' | translate }}</a></li>
+                        <li><a href="#">{{ 'portal.home44' | translate }}</a></li>
+                        <li><a href="#">{{ 'portal.home45' | translate }}</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-sm-6 col-md-6">
+                <div class="single-footer-widget">
+                    <h3>{{ 'portal.home46' | translate }}</h3>
+                    
+                    <ul class="list">
+                        <li><a href="#">{{ 'portal.home47' | translate }}</a></li>
+                        <li><a routerLink="/privacynotice">{{ 'portal.home48' | translate }}</a></li>
+                        <li><a routerLink="/termsofuse">{{ 'portal.home49' | translate }}</a></li>
+                        <li><a href="#">{{ 'portal.home50' | translate }}</a></li>
+                        <li><a href="#">{{ 'portal.home51' | translate }}</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-sm-6 col-md-6">
+                <div class="single-footer-widget">
+                    <h3>{{ 'portal.home52' | translate }}</h3>
+                    
+                      <ul class="footer-contact-info">
+                        <li>{{ 'portal.home53' | translate }}</li>
+                        <li><a href="#"> {{ 'portal.home54' | translate }}</a></li>
+                        <li><a href="#">{{ 'portal.home55' | translate }}</a></li>
+                      
+                    </ul>
+                </div>
+            </div>
+        </div>
+ 
+        <div class="copyright-area">
+  
+        <a href="#">{{ 'portal.home56' | translate }}</a>
+        </div>
+    </div>
+    
+    <div class="map-image"><img src="assets/img/map.png" alt="map"></div>
+</footer>
+<!-- End Footer Area -->

@@ -1,0 +1,190 @@
+<section class="login-section">
+    <div class="container-fluid">
+        <div class="form-row">
+            <div class="col-12">
+                <div class="login-wrapper">
+                    <div class="login-box">
+                        <div class="login-box-inner">
+                            <h1 class="text-center">
+                                <img id="logo" src="assets/img/logo.png" alt="">
+                                Signing Up to Appopay
+                            </h1>
+
+                            <div class="panel panel-default">
+                                <div class="panel-body">
+
+                                    <div class="stepper">
+                                        <!-- Stepper Nav Start -->
+                                        <ul class="nav nav-tabs" role="tablist">
+                                            <li role="presentation" class="active">
+                                                <a class="persistant-disabled" href="#stepper-step-1" data-toggle="tab"
+                                                    aria-controls="stepper-step-1" role="tab" title="Step 1">
+                                                    <span class="round-tab">1</span>
+                                                    <div class="title">Card</div>
+                                                </a>
+                                            </li>
+                                            <li role="presentation" class="disabled">
+                                                <a class="persistant-disabled" href="#stepper-step-2" data-toggle="tab"
+                                                    aria-controls="stepper-step-2" role="tab" title="Step 2">
+                                                    <span class="round-tab">2</span>
+                                                    <div class="title">Info</div>
+                                                </a>
+                                            </li>
+                                            <li role="presentation" class="disabled">
+                                                <a class="persistant-disabled" href="#stepper-step-3" data-toggle="tab"
+                                                    aria-controls="stepper-step-3" role="tab" title="Step 3">
+                                                    <span class="round-tab">3</span>
+                                                    <div class="title">Pin</div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <!-- Stepper Nav End -->
+
+                                        <form role="form">
+                                            <div class="tab-content">
+                                                <!-- Stepper 1 Section Start -->
+                                                <div class="tab-pane fade active show" role="tabpanel"
+                                                    id="stepper-step-1">
+                                                    <!-- Card Login Section Start-->
+                                                    <ul class="nav nav-pills card-option" id="pills-tab" role="tablist">
+                                                        <li class="nav-item">
+                                                            <a class="btn btn-primary btn-block active text-center"
+                                                                id="pills-card-tab" data-toggle="pill"
+                                                                href="#pills-card" role="tab" aria-controls="pills-card"
+                                                                aria-selected="true">+ Card</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="btn btn-primary btn-block text-center"
+                                                                id="pills-bank-tab" data-toggle="pill"
+                                                                href="#pills-bank" role="tab" aria-controls="pills-bank"
+                                                                aria-selected="false">+ Bank</a>
+                                                        </li>
+                                                    </ul>
+                                                    <div class="tab-content" id="pills-tabContent">
+                                                        <!-- Card Login Section Start -->
+                                                        <div class="tab-pane fade show active" id="pills-card"
+                                                            role="tabpanel" aria-labelledby="pills-card-tab">
+                                                            <p>Note: Credit Card will be validated</p>
+                                                            <div class="form-group">
+                                                                <input type="text" class="form-control"
+                                                                    placeholder="Card Number">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <input type="text" class="form-control"
+                                                                    placeholder="MM/YY">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <input type="number" class="form-control"
+                                                                    placeholder="CVV" maxlength="3">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <input type="button" class="btn btn-primary btn-block"
+                                                                    name="naxt" value="Next">
+                                                            </div>
+                                                        </div>
+                                                        <!-- Card Login Section End -->
+                                                        <!-- bank Login Section Start -->
+                                                        <div class="tab-pane fade" id="pills-bank" role="tabpanel"
+                                                            aria-labelledby="pills-bank-tab">
+                                                            <img class="logo-cooptavanza"
+                                                                src="assets/img/cooptavanza-signin_logo.png"
+                                                                alt="Cooptavanza">
+                                                            <p>Kindly Log-in your account from cooptavanza.</p>
+                                                            <div class="form-group">
+                                                                <input type="text" class="form-control"
+                                                                    placeholder="Username">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <input type="password" class="form-control"
+                                                                    placeholder="Password">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <input type="button" class="btn btn-primary btn-block"
+                                                                    name="naxt" value="Next">
+                                                            </div>
+                                                        </div>
+                                                        <!-- bank Login Section End -->
+                                                    </div>
+                                                    <!-- Card Login Section End-->
+
+
+                                                </div>
+                                                <!-- Stepper 1 Section End -->
+
+                                                <!-- Stepper 2 Section Start -->
+                                                <div class="tab-pane fade" role="tabpanel" id="stepper-step-2">
+                                                    <p>Fields with (*) sign are required.</p>
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-control"
+                                                            placeholder="*Firstname">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-control"
+                                                            placeholder="Middlename">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-control" placeholder="*Lastname">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input type="tel" class="form-control"
+                                                            placeholder="*Mobile Number">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input type="email" class="form-control" placeholder="*Email">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input type="password" class="form-control"
+                                                            placeholder="*Password">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input type="password" class="form-control"
+                                                            placeholder="*Confirm Password">
+                                                    </div>
+                                                    <div class="form-row">
+                                                        <div class="col-6">
+                                                            <input type="button" class="btn btn-primary btn-block"
+                                                                name="previous" value="Previous">
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <input type="button" class="btn btn-primary btn-block"
+                                                                name="next" value="Next">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- Stepper 2 Section End -->
+
+                                                <!-- Stepper 3 Section Start -->
+                                                <div class="tab-pane fade" role="tabpanel" id="stepper-step-3">
+                                                    <p>Fields with (*) sign are required.</p>
+                                                    <div class="form-group">
+                                                        <label>6 Digit Pin</label>
+                                                        <input type="password" class="form-control" placeholder="*Pin">
+                                                    </div>
+                                                    <div class="form-row">
+                                                        <div class="col-6">
+                                                            <input type="button" class="btn btn-primary btn-block"
+                                                                name="previous" value="Previous">
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <input type="button" class="btn btn-primary btn-block"
+                                                                name="submit" value="Submit">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- Stepper 3 Section End -->
+
+                                            </div>
+                                        </form>
+                                        <p>Already have an account? <a href="javascript:void(0)"  routerLink="/login">Sign In</a></p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
