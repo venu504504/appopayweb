@@ -25,5 +25,6 @@ export class AboutusComponent implements OnInit {
     }
 
   ngOnInit() {
+    //ok
   }
 }
